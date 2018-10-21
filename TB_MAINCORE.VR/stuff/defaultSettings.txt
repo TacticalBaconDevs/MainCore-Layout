@@ -187,7 +187,7 @@ force force ace_respawn_showFriendlyFireMessage = false;
 
 // ACE Sanitäter
 force force ace_medical_ai_enabledFor = 0;
-force force ace_medical_AIDamageThreshold = 1.2;
+force force ace_medical_AIDamageThreshold = 0.8;
 force force ace_medical_allowLitterCreation = true;
 force force ace_medical_allowUnconsciousAnimationOnTreatment = true;
 force force ace_medical_amountOfReviveLives = 3;
@@ -222,7 +222,7 @@ force force ace_medical_moveUnitsFromGroupOnUnconscious = false;
 force force ace_medical_painCoefficient = 0.8;
 force force ace_medical_painEffectType = 1;
 force force ace_medical_painIsOnlySuppressed = false;
-force force ace_medical_playerDamageThreshold = 6;
+force force ace_medical_playerDamageThreshold = 10;
 force force ace_medical_preventInstaDeath = true;
 force force ace_medical_remoteControlledAI = true;
 force force ace_medical_useCondition_PAK = 1;
@@ -390,7 +390,6 @@ force force STHud_Settings_RemoveDeadViaProximity = false;
 force force STHud_Settings_SquadBar = true;
 
 // TBMod
-force force TB_enableAdvSimulationManager = false;
 force force TB_enableVanillaSlingload = false;
 
 // TFAR - Allgemeine Einstellungen
