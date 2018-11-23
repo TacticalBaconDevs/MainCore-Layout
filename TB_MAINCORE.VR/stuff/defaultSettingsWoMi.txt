@@ -154,10 +154,10 @@ force force ace_map_gestures_maxRange = 10;
 // ACE Logistik
 force force ace_cargo_enable = true;
 force force ace_cargo_paradropTimeCoefficent = 2;
-force force ace_rearm_level = 1;
+force force ace_rearm_level = 2;
 force force ace_rearm_supply = 1;
 force force ace_refuel_hoseLength = 25;
-force force ace_refuel_rate = 10;
+force force ace_refuel_rate = 1;
 force force ace_repair_addSpareParts = false;
 force force ace_repair_autoShutOffEngineWhenStartingRepair = true;
 force force ace_repair_consumeItem_toolKit = 0;
