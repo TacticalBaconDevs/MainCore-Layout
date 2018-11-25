@@ -53,11 +53,11 @@ force force ace_ui_weaponNameBackground = false;
 force force ace_ui_zeroing = true;
 
 // ACE Durchzündung
-force force ace_cookoff_ammoCookoffDuration = 0.6;
+force force ace_cookoff_ammoCookoffDuration = 0.7;
 force force ace_cookoff_enable = true;
 force force ace_cookoff_enableAmmobox = true;
 force force ace_cookoff_enableAmmoCookoff = true;
-force force ace_cookoff_probabilityCoef = 0.8;
+force force ace_cookoff_probabilityCoef = 1.0;
 
 // ACE Einheitenwechsel
 force force ace_switchunits_enableSafeZone = true;
@@ -71,11 +71,11 @@ force force ace_switchunits_switchToWest = false;
 // ACE Erweiterte Ausdauer
 force force ace_advanced_fatigue_enabled = true;
 force force ace_advanced_fatigue_enableStaminaBar = true;
-force force ace_advanced_fatigue_loadFactor = 0.5;
-force force ace_advanced_fatigue_performanceFactor = 2;
-force force ace_advanced_fatigue_recoveryFactor = 2.5;
-force force ace_advanced_fatigue_swayFactor = 0.8;
-force force ace_advanced_fatigue_terrainGradientFactor = 0.4;
+force force ace_advanced_fatigue_loadFactor = 0.8;
+force force ace_advanced_fatigue_performanceFactor = 1.7;
+force force ace_advanced_fatigue_recoveryFactor = 2.2;
+force force ace_advanced_fatigue_swayFactor = 1.1;
+force force ace_advanced_fatigue_terrainGradientFactor = 0.7;
 
 // ACE Erweiterte Ballistik
 force force ace_advanced_ballistics_ammoTemperatureEnabled = true;
@@ -121,7 +121,7 @@ force force ace_overheating_overheatingDispersion = true;
 force force ace_overheating_showParticleEffects = true;
 force force ace_overheating_showParticleEffectsForEveryone = true;
 force force ace_overheating_unJamFailChance = 0.2;
-force force ace_overheating_unJamOnreload = false;
+force force ace_overheating_unJamOnreload = true;
 
 // ACE Interaktion
 force force ace_interaction_disableNegativeRating = true;
@@ -188,19 +188,19 @@ force force ace_respawn_showFriendlyFireMessage = false;
 // ACE Sanitäter
 force force ace_medical_ai_enabledFor = 0;
 force force ace_medical_AIDamageThreshold = 1.5;
-force force ace_medical_allowLitterCreation = true;
+force force ace_medical_allowLitterCreation = false;
 force force ace_medical_allowUnconsciousAnimationOnTreatment = true;
 force force ace_medical_amountOfReviveLives = 3;
 force force ace_medical_bleedingCoefficient = 1.1;
-force force ace_medical_blood_enabledFor = 2;
-force force ace_medical_consumeItem_PAK = 1;
+force force ace_medical_blood_enabledFor = 0;
+force force ace_medical_consumeItem_PAK = 0;
 force force ace_medical_consumeItem_SurgicalKit = 0;
-force force ace_medical_delayUnconCaptive = 1;
+force force ace_medical_delayUnconCaptive = 2;
 force force ace_medical_enableAdvancedWounds = true;
 force force ace_medical_enableFor = 0;
 force force ace_medical_enableOverdosing = false;
 force force ace_medical_enableRevive = 1;
-force force ace_medical_enableScreams = true;
+force force ace_medical_enableScreams = false;
 force force ace_medical_enableUnconsciousnessAI = 0;
 force force ace_medical_enableVehicleCrashes = false;
 force force ace_medical_healHitPointAfterAdvBandage = true;
@@ -212,27 +212,27 @@ force force ace_medical_litterSimulationDetail = 1;
 force force ace_medical_maxReviveTime = 600;
 force force ace_medical_medicSetting = 2;
 force force ace_medical_medicSetting_basicEpi = 1;
-force force ace_medical_medicSetting_PAK = 1;
+force force ace_medical_medicSetting_PAK = 2;
 force force ace_medical_medicSetting_SurgicalKit = 1;
 force force ace_medical_menu_allow = 1;
 force force ace_medical_menu_maxRange = 5;
 force force ace_medical_menu_openAfterTreatment = true;
 force force ace_medical_menu_useMenu = 1;
 force force ace_medical_moveUnitsFromGroupOnUnconscious = false;
-force force ace_medical_painCoefficient = 1.2;
+force force ace_medical_painCoefficient = 1.1;
 force force ace_medical_painEffectType = 1;
 force force ace_medical_painIsOnlySuppressed = false;
-force force ace_medical_playerDamageThreshold = 4;
+force force ace_medical_playerDamageThreshold = 3;
 force force ace_medical_preventInstaDeath = true;
 force force ace_medical_remoteControlledAI = true;
-force force ace_medical_useCondition_PAK = 1;
+force force ace_medical_useCondition_PAK = 0;
 force force ace_medical_useCondition_SurgicalKit = 0;
 force force ace_medical_useLocation_basicEpi = 0;
 force force ace_medical_useLocation_PAK = 0;
 force force ace_medical_useLocation_SurgicalKit = 0;
 
 // ACE Schnellzugang
-force force ace_quickmount_distance = 4;
+force force ace_quickmount_distance = 5;
 force force ace_quickmount_enabled = true;
 ace_quickmount_priority = 3;
 force force ace_quickmount_speed = 10;
@@ -360,7 +360,7 @@ force force Achilles_var_setRadioFrequenciesLR_Default = "70";
 force force Achilles_var_setRadioFrequenciesSR_Default = "51";
 
 // Achilles - Icon Selection
-force force Achilles_var_iconSelection = "Achilles_var_iconSelection_Ares";
+force force Achilles_var_iconSelection = "Achilles_var_iconSelection_Achilles";
 
 // Achilles - Modul Benutzeroberfläche
 Achilles_var_moduleTreeDLC = false;
@@ -380,6 +380,9 @@ force force grad_trenches_functions_gigantEnvelopeDigTime = 90;
 force force grad_trenches_functions_shortEnvelopeDigTime = 20;
 force force grad_trenches_functions_smallEnvelopeDigTime = 30;
 force force grad_trenches_functions_vehicleEnvelopeDigTime = 120;
+
+// NIArms
+force force niarms_magSwitch = true;
 
 // STUI Settings
 force force STHud_Settings_Occlusion = true;
