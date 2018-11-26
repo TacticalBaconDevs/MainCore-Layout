@@ -57,7 +57,7 @@ force force ace_cookoff_ammoCookoffDuration = 0.7;
 force force ace_cookoff_enable = true;
 force force ace_cookoff_enableAmmobox = true;
 force force ace_cookoff_enableAmmoCookoff = true;
-force force ace_cookoff_probabilityCoef = 1.0;
+force force ace_cookoff_probabilityCoef = 1;
 
 // ACE Einheitenwechsel
 force force ace_switchunits_enableSafeZone = true;
@@ -365,6 +365,9 @@ force force Achilles_var_iconSelection = "Achilles_var_iconSelection_Achilles";
 // Achilles - Modul Benutzeroberfläche
 Achilles_var_moduleTreeDLC = false;
 
+// ADV - ACE CPR
+force adv_aceCPR_maxTime = 600;
+
 // GRAD Trenches
 force force grad_trenches_functions_allowBigEnvelope = true;
 force force grad_trenches_functions_allowCamouflage = true;
@@ -381,8 +384,22 @@ force force grad_trenches_functions_shortEnvelopeDigTime = 20;
 force force grad_trenches_functions_smallEnvelopeDigTime = 30;
 force force grad_trenches_functions_vehicleEnvelopeDigTime = 120;
 
-// NIArms
-force force niarms_magSwitch = true;
+// Laxemann Align
+force force L_Align_enabled = true;
+force force L_Align_steadyShake_enabled = true;
+
+// Laxemann Immerse
+force force L_Immerse_exShake = true;
+force force L_Immerse_force = true;
+force force L_Immerse_recoil = true;
+force force L_Immerse_twitch = true;
+
+// LAxemann's Suppress
+L_Suppress_buildup = 0.5;
+force L_Suppress_enabled = true;
+L_Suppress_flyByIntensity = 0.5;
+L_Suppress_intensity = 0.5;
+L_Suppress_recovery = 1.5;
 
 // STUI Settings
 force force STHud_Settings_Occlusion = true;
@@ -433,3 +450,13 @@ force force TFAR_takingRadio = 2;
 force force TFAR_Teamspeak_Channel_Name = "Mission";
 force force TFAR_Teamspeak_Channel_Password = "willistgeil";
 force force tfar_terrain_interception_coefficient = 5;
+
+// VCOM SETTINGS
+force VCM_AIDISTANCEVEHPATH = 0;
+force VCM_AIMagLimit = 3;
+force VCM_ARTYDELAY = 500;
+force VCM_ARTYSPREAD = 500;
+force VCM_HEARINGDISTANCE = 500;
+force VCM_StealVeh = false;
+force VCM_WARNDELAY = 60;
+force VCM_WARNDIST = 800;
