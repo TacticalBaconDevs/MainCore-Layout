@@ -1,0 +1,11 @@
+/*
+    Beinhaltet die Mods dieser Mission im @Mod-Format.
+    Für eine schnellere Übersicht und fürs später nochmal spielen!
+*/
+// Unsere MUST-HAVE-Mods
+@ace
+@CBA_A3
+@task_force_radio
+@TBMod
+
+// zusätzlich benötigte Mods

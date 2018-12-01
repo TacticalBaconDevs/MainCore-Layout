@@ -1,0 +1,2 @@
+skillAI=0.6;
+precisionAI=0.4;
