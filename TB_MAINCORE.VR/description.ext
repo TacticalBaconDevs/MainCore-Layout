@@ -21,13 +21,13 @@ respawnDialog = 0;
 //respawnButton = 0;
 enableTeamSwitch = 0;
 
-minPlayerDistance = 100;
+minPlayerDistance = 30;
 wreckManagerMode = 1;
 wreckLimit = 5;
 wreckRemovalMinTime = 300;
 wreckRemovalMaxTime = 600;
 corpseManagerMode = 1;
-corpseLimit = 15;
+corpseLimit = 10;
 corpseRemovalMinTime = 300;
 corpseRemovalMaxTime = 600;
 
