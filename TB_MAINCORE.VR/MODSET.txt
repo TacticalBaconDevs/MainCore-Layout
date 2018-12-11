@@ -1,6 +1,8 @@
 /*
     Beinhaltet die Mods dieser Mission im @Mod-Format.
     Für eine schnellere Übersicht und fürs später nochmal spielen!
+    Werte in Klammern bedeuten, das sie nicht zum Bauen verwendet wurden,
+    also nur vom Zeus und/oder nur ClientMods sind.
 */
 // Unsere MUST-HAVE-Mods
 @ace
