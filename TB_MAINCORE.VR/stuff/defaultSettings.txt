@@ -421,9 +421,6 @@ force force L_Suppress_intensity = 0.5;
 force force L_Suppress_playerSwabEnabled = true;
 force force L_Suppress_recovery = 1.5;
 
-// NIArms
-force force niarms_magSwitch = true;
-
 // STUI Settings
 force force STHud_Settings_Occlusion = true;
 force force STHud_Settings_RemoveDeadViaProximity = false;

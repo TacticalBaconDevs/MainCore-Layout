@@ -43,25 +43,28 @@ TB_blacklistRollen_custom = [];
     if (([_x] call TB_fnc_customLayout) isEqualTo []) then {TB_blacklistRollen_custom pushBackUnique _x};
 }
 forEach ["lead","grena","sani","mg","spreng","aaat","trag","dmr","pilot","sniper","spotter","jtac","arzt","rifle","pionier"];
-if (count TB_blacklistRollen_custom == 15) then {TB_blacklistRollen_custom = []};
-    
-/* Eigende Namen für die Rollen, einfach den Namen zwischen den "" ändern, beachte,
-    einige Rollen haben festgeschriebene Fähigkeiten!    
-*/
-TB_customName = [
-    "Truppführer",              //lead
-    "Grenadier",                //grena
-    "Kampfsanitäter",           //sani -> feste Sanifähigkeiten
-    "Unterstützungsschütze",    //mg
-    "Sprengmeister",            //spreng -> feste Pionierfähigkeit
-    "Anti-Fahrzeug",            //aaat -> feste höhere Inventartragefähigkeit
-    "Munitionsträger",          //trag -> feste hohe Kistentragekraft, höhere Inventartragefähigkeit
-    "Gruppenaufklärer",         //dmr
-    "Pilot",                    //pilot -> feste Sanifähigkeiten, Pionierfähigkeit, hohe Kistentragekraft
-    "AufklärerSniper",          //sniper
-    "AufklärerSpotter",         //spotter
-    "DrohnenOP",                //jtac
-    "Arzt",                     //arzt -> feste Sanifähigkeiten
-    "Schütze",                  //rifle
-    "Pionier"                   //pionier -> feste Pionierfähigkeit, hohe Kistentragekraft, höhere Inventartragefähigkeit
-];
+
+// Customsystem aktiviert
+if (count TB_blacklistRollen_custom != 15) then
+{
+    /* Eigene Namen für die Rollen, einfach den Namen zwischen den "" ändern, beachte,
+        einige Rollen haben festgeschriebene Fähigkeiten!    
+    */
+    TB_customName = [
+        "Truppführer",              // lead
+        "Grenadier",                // grena
+        "Kampfsanitäter",           // sani -> feste Sanifähigkeiten
+        "Unterstützungsschütze",    // mg
+        "Sprengmeister",            // spreng -> feste Pionierfähigkeit
+        "Anti-Fahrzeug",            // aaat -> feste höhere Inventartragefähigkeit
+        "Munitionsträger",          // trag -> feste hohe Kistentragekraft, höhere Inventartragefähigkeit
+        "Gruppenaufklärer",         // dmr
+        "Pilot",                    // pilot -> feste Sanifähigkeiten, Pionierfähigkeit, hohe Kistentragekraft
+        "AufklärerSniper",          // sniper
+        "AufklärerSpotter",         // spotter
+        "DrohnenOP",                // jtac
+        "Arzt",                     // arzt -> feste Sanifähigkeiten
+        "Schütze",                  // rifle
+        "Pionier"                   // pionier -> feste Pionierfähigkeit, hohe Kistentragekraft, höhere Inventartragefähigkeit
+    ];
+};

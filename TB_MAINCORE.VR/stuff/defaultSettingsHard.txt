@@ -57,7 +57,7 @@ force force ace_cookoff_ammoCookoffDuration = 0.7;
 force force ace_cookoff_enable = true;
 force force ace_cookoff_enableAmmobox = true;
 force force ace_cookoff_enableAmmoCookoff = true;
-force force ace_cookoff_probabilityCoef = 1.0;
+force force ace_cookoff_probabilityCoef = 1;
 
 // ACE Einheitenwechsel
 force force ace_switchunits_enableSafeZone = true;
@@ -71,11 +71,11 @@ force force ace_switchunits_switchToWest = false;
 // ACE Erweiterte Ausdauer
 force force ace_advanced_fatigue_enabled = true;
 force force ace_advanced_fatigue_enableStaminaBar = true;
-force force ace_advanced_fatigue_loadFactor = 0.8;
-force force ace_advanced_fatigue_performanceFactor = 1.7;
-force force ace_advanced_fatigue_recoveryFactor = 2.2;
-force force ace_advanced_fatigue_swayFactor = 1.1;
-force force ace_advanced_fatigue_terrainGradientFactor = 0.7;
+force force ace_advanced_fatigue_loadFactor = 0.7;
+force force ace_advanced_fatigue_performanceFactor = 1.8;
+force force ace_advanced_fatigue_recoveryFactor = 2.3;
+force force ace_advanced_fatigue_swayFactor = 1;
+force force ace_advanced_fatigue_terrainGradientFactor = 0.6;
 
 // ACE Erweiterte Ballistik
 force force ace_advanced_ballistics_ammoTemperatureEnabled = true;
@@ -183,7 +183,6 @@ force force ace_mk6mortar_useAmmoHandling = true;
 // ACE Respawn
 force force ace_respawn_removeDeadBodiesDisconnected = true;
 force force ace_respawn_savePreDeathGear = true;
-force force ace_respawn_showFriendlyFireMessage = false;
 
 // ACE Sanitäter
 force force ace_medical_ai_enabledFor = 0;
@@ -209,7 +208,7 @@ force force ace_medical_keepLocalSettingsSynced = true;
 force force ace_medical_level = 2;
 force force ace_medical_litterCleanUpDelay = 120;
 force force ace_medical_litterSimulationDetail = 1;
-force force ace_medical_maxReviveTime = 300;
+force force ace_medical_maxReviveTime = 400;
 force force ace_medical_medicSetting = 2;
 force force ace_medical_medicSetting_basicEpi = 1;
 force force ace_medical_medicSetting_PAK = 1;
@@ -222,7 +221,7 @@ force force ace_medical_moveUnitsFromGroupOnUnconscious = false;
 force force ace_medical_painCoefficient = 0.7;
 force force ace_medical_painEffectType = 1;
 force force ace_medical_painIsOnlySuppressed = false;
-force force ace_medical_playerDamageThreshold = 1.5;
+force force ace_medical_playerDamageThreshold = 3;
 force force ace_medical_preventInstaDeath = false;
 force force ace_medical_remoteControlledAI = true;
 force force ace_medical_useCondition_PAK = 1;
@@ -408,22 +407,19 @@ force force L_Align_steadyShake_enabled = true;
 
 // Laxemann Immerse
 force force L_Immerse_exShake = true;
-force force L_Immerse_force = true;
+force force L_Immerse_force = false;
 force force L_Immerse_recoil = true;
 force force L_Immerse_twitch = true;
 
 // LAxemann's Suppress
-force force L_Suppress_buildup = 0.8;
+force force L_Suppress_buildup = 0.5;
 force force L_Suppress_enabled = true;
-force force L_Suppress_flyByEffects = true;
-force force L_Suppress_flyByIntensity = 0.8;
-force force L_Suppress_halting = true;
-force force L_Suppress_intensity = 0.8;
+force force L_Suppress_flyByEffects = false;
+force force L_Suppress_flyByIntensity = 0.5;
+force force L_Suppress_halting = false;
+force force L_Suppress_intensity = 0.5;
 force force L_Suppress_playerSwabEnabled = true;
-force force L_Suppress_recovery = 1.2;
-
-// NIArms
-force force niarms_magSwitch = true;
+force force L_Suppress_recovery = 1.5;
 
 // STUI Settings
 force force STHud_Settings_Occlusion = true;
@@ -442,7 +438,7 @@ force force TFAR_fullDuplex = true;
 force force TFAR_giveLongRangeRadioToGroupLeaders = false;
 force force TFAR_giveMicroDagrToSoldier = false;
 force force TFAR_givePersonalRadioToRegularSoldier = true;
-force force TFAR_globalRadioRangeCoef = 1;
+force force TFAR_globalRadioRangeCoef = 0.75;
 force force TFAR_instantiate_instantiateAtBriefing = false;
 force force TFAR_objectInterceptionEnabled = true;
 force force tfar_radiocode_east = "_opfor";
@@ -474,7 +470,7 @@ force force TFAR_spectatorCanHearFriendlies = true;
 force force TFAR_takingRadio = 2;
 force force TFAR_Teamspeak_Channel_Name = "Mission";
 force force TFAR_Teamspeak_Channel_Password = "willistgeil";
-force force tfar_terrain_interception_coefficient = 7;
+force force tfar_terrain_interception_coefficient = 10;
 
 // VCOM SETTINGS
 force force Vcm_ActivateAI = true;
@@ -488,7 +484,7 @@ force force VCM_Debug = false;
 force force VCM_ForceSpeed = true;
 force force VCM_FRMCHANGE = true;
 force force VCM_HEARINGDISTANCE = 1000;
-force force VCM_MINECHANCE = 75;
+force force VCM_MINECHANCE = 80;
 force force VCM_RAGDOLL = false;
 force force VCM_RAGDOLLCHC = 50;
 force force VCM_SIDEENABLED = [WEST,EAST,GUER];
