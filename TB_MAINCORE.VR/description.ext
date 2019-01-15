@@ -1,6 +1,5 @@
 ﻿// ######################################
-// # Description vom TacticalBacon [TB] #
-// # von Willi "shukari" Graff          #
+// # Description von TacticalBacon [TB] #
 // ######################################
 // https://community.bistudio.com/wiki/Description.ext
 
@@ -12,7 +11,6 @@ overviewPicture = "\TBMod_main\pics\logo.paa";
 author = "DEIN NAME [TacticalBacon]"; // das [TacticalBacon] MUSS immer hinter deinem Namen stehen für den Mod
 
 //skipLobby = 1;
-
 respawn = 3;
 respawnDelay = 0.01;
 //respawnVehicleDelay = 5;

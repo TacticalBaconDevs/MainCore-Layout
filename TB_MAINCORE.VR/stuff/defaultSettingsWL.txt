@@ -19,9 +19,9 @@ force force ace_pylons_timePerPylon = 10;
 force force ace_ui_allowSelectiveUI = false;
 force force ace_ui_ammoCount = false;
 force force ace_ui_ammoType = false;
-force force ace_ui_commandMenu = false;
+force force ace_ui_commandMenu = true;
 force force ace_ui_firingMode = true;
-force force ace_ui_groupBar = false;
+force force ace_ui_groupBar = true;
 force force ace_ui_gunnerAmmoCount = true;
 force force ace_ui_gunnerAmmoType = true;
 force force ace_ui_gunnerFiringMode = true;
@@ -93,7 +93,7 @@ force force ace_advanced_throwing_showMouseControls = true;
 force force ace_advanced_throwing_showThrowArc = true;
 
 // ACE Fahrzeugsperre
-force force ace_vehiclelock_defaultLockpickStrength = 60;
+force force ace_vehiclelock_defaultLockpickStrength = 300;
 force force ace_vehiclelock_lockVehicleInventory = true;
 force force ace_vehiclelock_vehicleStartingLockState = 1;
 
@@ -242,7 +242,7 @@ force force ace_goggles_showInThirdPerson = false;
 
 // ACE Sichtweitenbegrenzung
 force force ace_viewdistance_enabled = true;
-force force ace_viewdistance_limitViewDistance = 6000;
+force force ace_viewdistance_limitViewDistance = 2500;
 ace_viewdistance_objectViewDistanceCoeff = 4;
 ace_viewdistance_viewDistanceAirVehicle = 6;
 ace_viewdistance_viewDistanceLandVehicle = 4;
@@ -427,7 +427,7 @@ force force L_Suppress_recovery = 1.5;
 // STUI Settings
 force force STHud_Settings_Occlusion = true;
 force force STHud_Settings_RemoveDeadViaProximity = false;
-force force STHud_Settings_SquadBar = true;
+force force STHud_Settings_SquadBar = false;
 
 // TBMod
 force force TB_enableVanillaSlingload = true;

@@ -57,7 +57,7 @@ force force ace_cookoff_ammoCookoffDuration = 0.7;
 force force ace_cookoff_enable = true;
 force force ace_cookoff_enableAmmobox = true;
 force force ace_cookoff_enableAmmoCookoff = true;
-force force ace_cookoff_probabilityCoef = 1.0;
+force force ace_cookoff_probabilityCoef = 1;
 
 // ACE Einheitenwechsel
 force force ace_switchunits_enableSafeZone = true;
@@ -93,9 +93,9 @@ force force ace_advanced_throwing_showMouseControls = true;
 force force ace_advanced_throwing_showThrowArc = true;
 
 // ACE Fahrzeugsperre
-force force ace_vehiclelock_defaultLockpickStrength = 30;
+force force ace_vehiclelock_defaultLockpickStrength = 300;
 force force ace_vehiclelock_lockVehicleInventory = true;
-force force ace_vehiclelock_vehicleStartingLockState = -1;
+force force ace_vehiclelock_vehicleStartingLockState = 1;
 
 // ACE Fingerzeig
 force force ace_finger_enabled = true;
@@ -144,7 +144,7 @@ force force ace_map_mapIllumination = true;
 force force ace_map_mapLimitZoom = false;
 force force ace_map_mapShake = true;
 force force ace_map_mapShowCursorCoordinates = false;
-force force ace_markers_moveRestriction = -1;
+force force ace_markers_moveRestriction = 0;
 
 // ACE Kartenzeichen
 force force ace_map_gestures_enabled = true;
@@ -183,15 +183,14 @@ force force ace_mk6mortar_useAmmoHandling = true;
 // ACE Respawn
 force force ace_respawn_removeDeadBodiesDisconnected = true;
 force force ace_respawn_savePreDeathGear = true;
-force force ace_respawn_showFriendlyFireMessage = false;
 
 // ACE Sanitäter
 force force ace_medical_ai_enabledFor = 0;
-force force ace_medical_AIDamageThreshold = 0.8;
+force force ace_medical_AIDamageThreshold = 1.5;
 force force ace_medical_allowLitterCreation = false;
 force force ace_medical_allowUnconsciousAnimationOnTreatment = true;
 force force ace_medical_amountOfReviveLives = 3;
-force force ace_medical_bleedingCoefficient = 0.5;
+force force ace_medical_bleedingCoefficient = 0.7;
 force force ace_medical_blood_enabledFor = 0;
 force force ace_medical_consumeItem_PAK = 1;
 force force ace_medical_consumeItem_SurgicalKit = 0;
@@ -219,7 +218,7 @@ force force ace_medical_menu_maxRange = 5;
 force force ace_medical_menu_openAfterTreatment = true;
 force force ace_medical_menu_useMenu = 1;
 force force ace_medical_moveUnitsFromGroupOnUnconscious = false;
-force force ace_medical_painCoefficient = 0.7;
+force force ace_medical_painCoefficient = 0.8;
 force force ace_medical_painEffectType = 1;
 force force ace_medical_painIsOnlySuppressed = false;
 force force ace_medical_playerDamageThreshold = 3;
@@ -289,7 +288,7 @@ force force ace_nametags_playerNamesViewDistance = 10;
 force force ace_nametags_showCursorTagForVehicles = false;
 force force ace_nametags_showPlayerNames = 0;
 force force ace_nametags_showPlayerRanks = false;
-ace_nametags_showVehicleCrewInfo = false;
+force force ace_nametags_showVehicleCrewInfo = false;
 
 // ACE Zeus
 force force ace_zeus_autoAddObjects = true;
@@ -354,21 +353,20 @@ force force acex_volume_lowerInVehicles = true;
 force force acex_volume_reduction = 6;
 acex_volume_showNotification = false;
 
+// Achilles - Benutzeroberfläche
+force force Achilles_var_iconSelection = "Achilles_var_iconSelection_Achilles";
+Achilles_var_moduleTreeDLC = false;
+Achilles_var_moduleTreeSearchPatch = true;
+
 // Achilles - Debug
 force force Achilles_Debug_Output_Enabled = false;
 
-// Achilles - Defaults
+// Achilles - Standardeinstellungen von Modulen
 force force Achilles_var_setRadioFrequenciesLR_Default = "70";
 force force Achilles_var_setRadioFrequenciesSR_Default = "50";
 
-// Achilles - Icon Selection
-force force Achilles_var_iconSelection = "Achilles_var_iconSelection_Achilles";
-
-// Achilles - Modul Benutzeroberfläche
-Achilles_var_moduleTreeDLC = false;
-
 // ADV - ACE CPR
-force adv_aceCPR_maxTime = 600;
+force force adv_aceCPR_maxTime = 600;
 
 // Fire For Effect
 force force RydFFE_2PhWithoutFO = false;
@@ -383,6 +381,10 @@ force force RydFFE_Monogamy = true;
 force force RydFFE_OnePhase = false;
 force force RydFFE_Safe = 100;
 force force RydFFE_ShellView = false;
+
+// GRAD slingHelmet
+force force GRAD_slingHelmet_additionalList = "";
+force force GRAD_slingHelmet_allowAll = false;
 
 // GRAD Trenches
 force force grad_trenches_functions_allowBigEnvelope = true;
@@ -408,22 +410,19 @@ force force L_Align_steadyShake_enabled = true;
 
 // Laxemann Immerse
 force force L_Immerse_exShake = true;
-force force L_Immerse_force = true;
+force force L_Immerse_force = false;
 force force L_Immerse_recoil = true;
 force force L_Immerse_twitch = true;
 
 // LAxemann's Suppress
-force force L_Suppress_buildup = 0.8;
+force force L_Suppress_buildup = 0.5;
 force force L_Suppress_enabled = true;
-force force L_Suppress_flyByEffects = true;
-force force L_Suppress_flyByIntensity = 0.8;
-force force L_Suppress_halting = true;
-force force L_Suppress_intensity = 0.8;
+force force L_Suppress_flyByEffects = false;
+force force L_Suppress_flyByIntensity = 0.5;
+force force L_Suppress_halting = false;
+force force L_Suppress_intensity = 0.5;
 force force L_Suppress_playerSwabEnabled = true;
-force force L_Suppress_recovery = 1.2;
-
-// NIArms
-force force niarms_magSwitch = true;
+force force L_Suppress_recovery = 1.5;
 
 // STUI Settings
 force force STHud_Settings_Occlusion = true;
@@ -474,7 +473,7 @@ force force TFAR_spectatorCanHearFriendlies = true;
 force force TFAR_takingRadio = 2;
 force force TFAR_Teamspeak_Channel_Name = "Mission";
 force force TFAR_Teamspeak_Channel_Password = "willistgeil";
-force force tfar_terrain_interception_coefficient = 7;
+force force tfar_terrain_interception_coefficient = 10;
 
 // VCOM SETTINGS
 force force Vcm_ActivateAI = true;
@@ -497,4 +496,3 @@ force force VCM_STATICARMT = 300;
 force force VCM_StealVeh = true;
 force force VCM_WARNDELAY = 60;
 force force VCM_WARNDIST = 1000;
-
