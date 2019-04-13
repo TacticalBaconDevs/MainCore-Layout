@@ -130,6 +130,7 @@ force force ace_interaction_enableTeamManagement = true;
 
 // ACE Interaktionsmenü
 force force ace_interact_menu_addBuildingActions = false;
+ace_interact_menu_alwaysUseCursorSelfInteraction = true;
 force force ace_interact_menu_menuAnimationSpeed = 2;
 force force ace_interact_menu_useListMenu = true;
 
@@ -153,6 +154,7 @@ force force ace_map_gestures_maxRange = 10;
 
 // ACE Logistik
 force force ace_cargo_enable = true;
+force force ace_cargo_loadTimeCoefficient = 3;
 force force ace_cargo_paradropTimeCoefficent = 2;
 force force ace_rearm_level = 1;
 force force ace_rearm_supply = 1;
@@ -174,6 +176,9 @@ force force ace_magazinerepack_timePerAmmo = 1.5;
 force force ace_magazinerepack_timePerBeltLink = 8;
 force force ace_magazinerepack_timePerMagazine = 2;
 
+// ACE Markierungssystem (Spraydose)
+force force ace_tagging_quickTag = 0;
+
 // ACE Mk6 Mörser
 force force ace_mk6mortar_airResistanceEnabled = false;
 force force ace_mk6mortar_allowCompass = true;
@@ -185,19 +190,20 @@ force force ace_respawn_removeDeadBodiesDisconnected = true;
 force force ace_respawn_savePreDeathGear = true;
 
 // ACE Sanitäter
-force force ace_medical_ai_enabledFor = 0;
+force force ace_medical_ai_enabledFor = 2;
 force force ace_medical_AIDamageThreshold = 1.5;
 force force ace_medical_allowLitterCreation = false;
 force force ace_medical_allowUnconsciousAnimationOnTreatment = true;
 force force ace_medical_amountOfReviveLives = 3;
-force force ace_medical_bleedingCoefficient = 0.7;
+force force ace_medical_bleedingCoefficient = 0.6;
 force force ace_medical_blood_enabledFor = 0;
 force force ace_medical_consumeItem_PAK = 0;
 force force ace_medical_consumeItem_SurgicalKit = 0;
-force force ace_medical_delayUnconCaptive = 2;
+force force ace_medical_convertItems = 0;
+force force ace_medical_delayUnconCaptive = 1;
 force force ace_medical_enableAdvancedWounds = true;
-force force ace_medical_enableFor = 0;
-force force ace_medical_enableOverdosing = false;
+force force ace_medical_enableFor = 1;
+force force ace_medical_enableOverdosing = true;
 force force ace_medical_enableRevive = 1;
 force force ace_medical_enableScreams = false;
 force force ace_medical_enableUnconsciousnessAI = 0;
@@ -218,9 +224,9 @@ force force ace_medical_menu_maxRange = 5;
 force force ace_medical_menu_openAfterTreatment = true;
 force force ace_medical_menu_useMenu = 1;
 force force ace_medical_moveUnitsFromGroupOnUnconscious = false;
-force force ace_medical_painCoefficient = 0.8;
+force force ace_medical_painCoefficient = 0.7;
 force force ace_medical_painEffectType = 1;
-force force ace_medical_painIsOnlySuppressed = false;
+force force ace_medical_painIsOnlySuppressed = true;
 force force ace_medical_playerDamageThreshold = 3;
 force force ace_medical_preventInstaDeath = true;
 force force ace_medical_remoteControlledAI = true;
@@ -261,10 +267,12 @@ force force ace_explosives_punishNonSpecialists = true;
 force force ace_explosives_requireSpecialist = false;
 
 // ACE Uncategorized
+force force ace_fastroping_requireRopeItems = false;
 force force ace_gforces_enabledFor = 1;
 force force ace_hitreactions_minDamageToTrigger = 0.1;
 force force ace_laser_dispersionCount = 2;
 force force ace_microdagr_mapDataAvailable = 2;
+force force ace_microdagr_waypointPrecision = 3;
 force force ace_optionsmenu_showNewsOnMainMenu = false;
 force force ace_overpressure_distanceCoefficient = 0.8;
 
@@ -283,6 +291,7 @@ force force ace_winddeflection_simulationInterval = 0.05;
 force force ace_winddeflection_vehicleEnabled = true;
 
 // ACE Zeige Spielernamen
+ace_nametags_defaultNametagColor = [1,1,0,0.25104];
 force force ace_nametags_playerNamesMaxAlpha = 0.6;
 force force ace_nametags_playerNamesViewDistance = 10;
 force force ace_nametags_showCursorTagForVehicles = false;
@@ -334,6 +343,7 @@ force force acex_headless_delay = 10;
 force force acex_headless_enabled = true;
 force force acex_headless_endMission = 0;
 force force acex_headless_log = false;
+force force acex_headless_transferLoadout = 1;
 
 // ACEX Hinsetzen
 force force acex_sitting_enable = true;
@@ -350,14 +360,15 @@ force force acex_viewrestriction_preserveView = false;
 force force acex_volume_enabled = true;
 force force acex_volume_fadeDelay = 2;
 force force acex_volume_lowerInVehicles = true;
-force force acex_volume_reduction = 6;
+force force acex_volume_reduction = 5;
 acex_volume_remindIfLowered = true;
 acex_volume_showNotification = false;
 
 // Achilles - Benutzeroberfläche
 force force Achilles_var_iconSelection = "Achilles_var_iconSelection_Achilles";
+force force Achilles_var_moduleTreeCollapse = true;
 Achilles_var_moduleTreeDLC = false;
-Achilles_var_moduleTreeSearchPatch = true;
+force force Achilles_var_moduleTreeSearchPatch = true;
 
 // Achilles - Debug
 force force Achilles_Debug_Output_Enabled = false;
@@ -377,9 +388,15 @@ force force adv_aceCPR_enable = true;
 force force adv_aceCPR_maxTime = 600;
 force force adv_aceCPR_useLocation_AED = 0;
 
+// DUI - Squad Radar - Indikatoren
+force force diwako_dui_indicators_range = 20;
+
 // DUI - Squad Radar - Radar
-force force diwako_dui_enable_compass = true;
+diwako_dui_compass_style = ["\z\diwako_dui\addons\radar\UI\compass_styles\classic\limited.paa","\z\diwako_dui\addons\radar\UI\compass_styles\classic\full.paa"];
+force force diwako_dui_compassRange = 30;
+force force diwako_dui_distanceWarning = 3;
 force force diwako_dui_enable_compass_dir = 2;
+force force diwako_dui_enable_occlusion = true;
 force force diwako_dui_show_squadbar = false;
 
 // Fire For Effect
@@ -395,6 +412,11 @@ force force RydFFE_Monogamy = true;
 force force RydFFE_OnePhase = false;
 force force RydFFE_Safe = 100;
 force force RydFFE_ShellView = false;
+
+// Goko Ballistic Impact
+force force gokobi_var_AllowedCaliber = 1.6;
+force force gokobi_var_debug = false;
+force force gokobi_var_onoffswitch = true;
 
 // GRAD slingHelmet
 force force GRAD_slingHelmet_additionalList = "";
@@ -429,12 +451,12 @@ force force L_Immerse_recoil = true;
 force force L_Immerse_twitch = true;
 
 // LAxemann's Suppress
-force force L_Suppress_buildup = 0.6;
+force force L_Suppress_buildup = 0.7;
 force force L_Suppress_enabled = true;
 force force L_Suppress_flyByEffects = true;
-force force L_Suppress_flyByIntensity = 0.6;
+force force L_Suppress_flyByIntensity = 0.7;
 force force L_Suppress_halting = false;
-force force L_Suppress_intensity = 0.6;
+force force L_Suppress_intensity = 0.7;
 force force L_Suppress_playerSwabEnabled = true;
 force force L_Suppress_recovery = 1.4;
 
@@ -446,10 +468,11 @@ force force niarms_magSwitch = true;
 force force TB_enableVanillaSlingload = true;
 
 // TFAR - Allgemeine Einstellungen
-force force TFAR_AICanHearPlayer = true;
-force force TFAR_AICanHearSpeaker = true;
+force force TFAR_AICanHearPlayer = false;
+force force TFAR_AICanHearSpeaker = false;
 force force TFAR_defaultIntercomSlot = -1;
 force force TFAR_enableIntercom = true;
+force force TFAR_experimentalVehicleIsolation = true;
 force force TFAR_fullDuplex = true;
 force force TFAR_giveLongRangeRadioToGroupLeaders = false;
 force force TFAR_giveMicroDagrToSoldier = false;
@@ -457,6 +480,7 @@ force force TFAR_givePersonalRadioToRegularSoldier = true;
 force force TFAR_globalRadioRangeCoef = 0.9;
 force force TFAR_instantiate_instantiateAtBriefing = false;
 force force TFAR_objectInterceptionEnabled = true;
+force force TFAR_objectInterceptionStrength = 400;
 force force tfar_radiocode_east = "_opfor";
 force force tfar_radiocode_independent = "_independent";
 force force tfar_radiocode_west = "_bluefor";
@@ -489,21 +513,34 @@ force force TFAR_Teamspeak_Channel_Password = "willistgeil";
 force force tfar_terrain_interception_coefficient = 8;
 
 // TFAR - Benutzereinstellungen
-TFAR_default_radioVolume = 6;
 TFAR_pluginTimeout = 6;
+
+// Unit Voice-Over Options
+force force UVO_option_ambientGenericEnabled = true;
+force force UVO_option_ambientRadioChance = 0.5;
+force force UVO_option_ambientRadioEnabled = true;
+force force UVO_option_ambientRadioSetting = 1;
+force force UVO_option_clientEnabled = true;
+force force UVO_option_deathShoutsDiameter = 300;
+force force UVO_option_deathShoutsVolume = 3;
+force force UVO_option_enableSentences = false;
+force force UVO_option_killConfirmChanceAI = 1;
+force force UVO_option_killConfirmChancePlayer = 1;
+force force UVO_option_soundsDiameter = 300;
+force force UVO_option_soundsSamplePitch = 1;
 
 // VCOM SETTINGS
 force force Vcm_ActivateAI = true;
 force force VCM_ADVANCEDMOVEMENT = true;
 force force VCM_AIDISTANCEVEHPATH = 0;
-force force VCM_AIMagLimit = 3;
+force force VCM_AIMagLimit = 2;
 force force VCM_ARTYDELAY = 600;
-force force VCM_ARTYENABLE = true;
+force force VCM_ARTYENABLE = false;
 force force VCM_ARTYSPREAD = 300;
 force force VCM_Debug = false;
 force force VCM_ForceSpeed = true;
 force force VCM_FRMCHANGE = true;
-force force VCM_HEARINGDISTANCE = 300;
+force force VCM_HEARINGDISTANCE = 200;
 force force VCM_MINECHANCE = 25;
 force force VCM_RAGDOLL = false;
 force force VCM_RAGDOLLCHC = 50;
@@ -511,5 +548,5 @@ force force VCM_SIDEENABLED = [GUER,EAST];
 force force VCM_SKILLCHANGE = true;
 force force VCM_STATICARMT = 300;
 force force VCM_StealVeh = false;
-force force VCM_WARNDELAY = 120;
-force force VCM_WARNDIST = 300;
+force force VCM_WARNDELAY = 600;
+force force VCM_WARNDIST = 200;
