@@ -191,7 +191,7 @@ force force ace_respawn_savePreDeathGear = true;
 
 // ACE Sanitäter
 force force ace_medical_ai_enabledFor = 2;
-force force ace_medical_AIDamageThreshold = 1.5;
+force force ace_medical_AIDamageThreshold = 0.8;
 force force ace_medical_allowLitterCreation = false;
 force force ace_medical_allowUnconsciousAnimationOnTreatment = true;
 force force ace_medical_amountOfReviveLives = 3;
@@ -226,7 +226,7 @@ force force ace_medical_menu_useMenu = 1;
 force force ace_medical_moveUnitsFromGroupOnUnconscious = false;
 force force ace_medical_painCoefficient = 0.7;
 force force ace_medical_painEffectType = 1;
-force force ace_medical_painIsOnlySuppressed = true;
+force force ace_medical_painIsOnlySuppressed = false;
 force force ace_medical_playerDamageThreshold = 3;
 force force ace_medical_preventInstaDeath = true;
 force force ace_medical_remoteControlledAI = true;
@@ -390,6 +390,7 @@ force force adv_aceCPR_useLocation_AED = 0;
 
 // DUI - Squad Radar - Indikatoren
 force force diwako_dui_indicators_range = 20;
+force force diwako_dui_indicators_show = false;
 
 // DUI - Squad Radar - Radar
 diwako_dui_compass_style = ["\z\diwako_dui\addons\radar\UI\compass_styles\classic\limited.paa","\z\diwako_dui\addons\radar\UI\compass_styles\classic\full.paa"];
@@ -398,25 +399,6 @@ force force diwako_dui_distanceWarning = 3;
 force force diwako_dui_enable_compass_dir = 2;
 force force diwako_dui_enable_occlusion = true;
 force force diwako_dui_show_squadbar = false;
-
-// Fire For Effect
-force force RydFFE_2PhWithoutFO = false;
-force force RydFFE_Acc = 2;
-force force RydFFE_Active = false;
-force force RydFFE_Amount = 6;
-force force RydFFE_Debug = false;
-force force RydFFE_FO_string = "";
-force force RydFFE_FoAccGain = 1;
-force force RydFFE_FOClass_string = "i_spotter_f, o_spotter_f, b_spotter_f, o_recon_jtac_f, b_recon_jtac_f, i_sniper_f, o_sniper_f, b_sniper_f, i_soldier_m_f, o_soldier_m_f, b_g_soldier_m_f, b_soldier_m_f, o_recon_m_f, b_recon_m_f, o_soldieru_m_f, i_uav_01_f, i_uav_02_cas_f, i_uav_02_f, o_uav_01_f, o_uav_02_cas_f, o_uav_02_f, b_uav_01_f, b_uav_02_cas_f, b_uav_02_f";
-force force RydFFE_Monogamy = true;
-force force RydFFE_OnePhase = false;
-force force RydFFE_Safe = 100;
-force force RydFFE_ShellView = false;
-
-// Goko Ballistic Impact
-force force gokobi_var_AllowedCaliber = 1.6;
-force force gokobi_var_debug = false;
-force force gokobi_var_onoffswitch = true;
 
 // GRAD slingHelmet
 force force GRAD_slingHelmet_additionalList = "";
@@ -460,12 +442,18 @@ force force L_Suppress_intensity = 0.7;
 force force L_Suppress_playerSwabEnabled = true;
 force force L_Suppress_recovery = 1.4;
 
-// NIArms
-force force niarms_accswitch = true;
-force force niarms_magSwitch = true;
-
 // TBMod
+force force TB_crashHelfer = true;
+force force TB_debug_lvl = 0;
+force force TB_debug_remote = false;
+force force TB_doorBreach = true;
 force force TB_enableVanillaSlingload = true;
+force force TB_fpsMonitor_client = true;
+force force TB_fpsMonitor_zeus = true;
+force force TB_inkognitoSystem = false;
+force force TB_medical_coef_global = 1;
+force force TB_recoilCoef = 1;
+force force TB_recoilStart = 0.5;
 
 // TFAR - Allgemeine Einstellungen
 force force TFAR_AICanHearPlayer = false;
@@ -515,29 +503,59 @@ force force tfar_terrain_interception_coefficient = 8;
 // TFAR - Benutzereinstellungen
 TFAR_pluginTimeout = 6;
 
+// Unit Ambient SFX Options
+force force UAS_option_chanceCough = 0.1;
+force force UAS_option_chanceRadio = 0.5;
+force force UAS_option_chanceSigh = 0.1;
+force force UAS_option_chanceWhistle = 0.03;
+force force UAS_option_disableOnPlayers = true;
+force force UAS_option_disableRadioOnPlayers = true;
+force force UAS_option_enableCough = true;
+force force UAS_option_enableRadio = true;
+force force UAS_option_enableSigh = true;
+force force UAS_option_enableWhistle = true;
+force force UAS_option_groupRadio = 1;
+force force UAS_option_intMultiplierCough = 2.5;
+force force UAS_option_intMultiplierRadio = 2.5;
+force force UAS_option_intMultiplierSigh = 2.5;
+force force UAS_option_intMultiplierWhistle = 2.5;
+force force UAS_option_maxDistCough = 250;
+force force UAS_option_maxDistRadio = 250;
+force force UAS_option_maxDistRadioInVehicle = 100;
+force force UAS_option_maxDistSigh = 150;
+force force UAS_option_maxDistWhistle = 250;
+force force UAS_option_minIntervalCough = 60;
+force force UAS_option_minIntervalRadio = 30;
+force force UAS_option_minIntervalSigh = 60;
+force force UAS_option_minIntervalWhistle = 120;
+
 // Unit Voice-Over Options
-force force UVO_option_ambientGenericEnabled = true;
-force force UVO_option_ambientRadioChance = 0.5;
-force force UVO_option_ambientRadioEnabled = true;
-force force UVO_option_ambientRadioSetting = 1;
 force force UVO_option_clientEnabled = false;
-force force UVO_option_deathShoutsDiameter = 300;
 force force UVO_option_deathShoutsVolume = 3;
-force force UVO_option_enableSentences = false;
+force force UVO_option_enableSentencesEast = true;
+force force UVO_option_enableSentencesGuer = true;
+force force UVO_option_enableSentencesWest = true;
+force force UVO_option_enableUVOEast = true;
+force force UVO_option_enableUVOGuer = true;
+force force UVO_option_enableUVOWest = true;
 force force UVO_option_killConfirmChanceAI = 1;
 force force UVO_option_killConfirmChancePlayer = 1;
-force force UVO_option_soundsDiameter = 300;
+force force UVO_option_maxDistDeathShouts = 300;
+force force UVO_option_maxDistVoices = 300;
 force force UVO_option_soundsSamplePitch = 1;
 
 // VCOM SETTINGS
-force force Vcm_ActivateAI = true;
+force force VCM_ActivateAI = true;
 force force VCM_ADVANCEDMOVEMENT = true;
 force force VCM_AIDISTANCEVEHPATH = 0;
 force force VCM_AIMagLimit = 2;
 force force VCM_ARTYDELAY = 600;
-force force VCM_ARTYENABLE = false;
-force force VCM_ARTYSPREAD = 300;
+force force VCM_ARTYENABLE = true;
+force force VCM_ARTYSIDES = [WEST,EAST,GUER];
+force force VCM_CARGOCHNG = true;
+force force VCM_ClassSteal = true;
 force force VCM_Debug = false;
+force force VCM_DISEMBARKRANGE = 100;
 force force VCM_ForceSpeed = true;
 force force VCM_FRMCHANGE = true;
 force force VCM_HEARINGDISTANCE = 200;
@@ -548,5 +566,14 @@ force force VCM_SIDEENABLED = [GUER,EAST];
 force force VCM_SKILLCHANGE = true;
 force force VCM_STATICARMT = 300;
 force force VCM_StealVeh = false;
+force force VCM_TURRETUNLOAD = false;
+force force VCM_USECBASETTINGS = true;
 force force VCM_WARNDELAY = 600;
 force force VCM_WARNDIST = 200;
+
+// VET_Unflipping
+force force vet_unflipping_require_toolkit = false;
+force force vet_unflipping_time = 15;
+force force vet_unflipping_unit_man_limit = 7;
+force force vet_unflipping_unit_mass_limit = 4000;
+force force vet_unflipping_vehicle_mass_limit = 100000;
