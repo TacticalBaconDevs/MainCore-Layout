@@ -501,6 +501,7 @@ force force TFAR_Teamspeak_Channel_Password = "willistgeil";
 force force tfar_terrain_interception_coefficient = 8;
 
 // TFAR - Benutzereinstellungen
+TFAR_default_radioVolume = 6.03862;
 TFAR_pluginTimeout = 6;
 
 // Unit Ambient SFX Options
@@ -539,7 +540,7 @@ force force UVO_option_enableUVOEast = true;
 force force UVO_option_enableUVOGuer = true;
 force force UVO_option_enableUVOWest = true;
 force force UVO_option_killConfirmChanceAI = 1;
-force force UVO_option_killConfirmChancePlayer = 1;
+force force UVO_option_killConfirmChancePlayer = 0;
 force force UVO_option_maxDistDeathShouts = 300;
 force force UVO_option_maxDistVoices = 300;
 force force UVO_option_soundsSamplePitch = 1;
