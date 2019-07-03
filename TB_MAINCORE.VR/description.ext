@@ -19,15 +19,15 @@ respawnDialog = 0;
 //respawnButton = 0;
 enableTeamSwitch = 0;
 
-minPlayerDistance = 30;
+minPlayerDistance = 20;
 wreckManagerMode = 1;
 wreckLimit = 5;
 wreckRemovalMinTime = 1800; // wenn das Limit erreicht/überschritten
 wreckRemovalMaxTime = 7200; // wenn das Limit nicht erreicht
 corpseManagerMode = 1;
 corpseLimit = 10;
-corpseRemovalMinTime = 300;
-corpseRemovalMaxTime = 600;
+corpseRemovalMinTime = 15; // 300 - wenn das Limit erreicht/überschritten
+corpseRemovalMaxTime = 300; // wenn das Limit nicht erreicht
 
 forceRotorLibSimulation = 0;
 enableDebugConsole[] = {"76561198029318101"}; //enableDebugConsole = 1;

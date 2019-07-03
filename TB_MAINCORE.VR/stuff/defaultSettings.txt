@@ -398,7 +398,7 @@ force force diwako_dui_compassRange = 30;
 force force diwako_dui_distanceWarning = 3;
 force force diwako_dui_enable_compass_dir = 2;
 force force diwako_dui_enable_occlusion = true;
-force force diwako_dui_show_squadbar = false;
+force force diwako_dui_radar_sortType = "fireteam";
 
 // GRAD slingHelmet
 force force GRAD_slingHelmet_additionalList = "";
@@ -501,7 +501,6 @@ force force TFAR_Teamspeak_Channel_Password = "willistgeil";
 force force tfar_terrain_interception_coefficient = 8;
 
 // TFAR - Benutzereinstellungen
-TFAR_default_radioVolume = 6.03862;
 TFAR_pluginTimeout = 6;
 
 // Unit Ambient SFX Options
@@ -574,7 +573,7 @@ force force VCM_WARNDIST = 200;
 
 // VET_Unflipping
 force force vet_unflipping_require_toolkit = false;
-force force vet_unflipping_time = 15;
+force force vet_unflipping_time = 10;
 force force vet_unflipping_unit_man_limit = 7;
 force force vet_unflipping_unit_mass_limit = 4000;
 force force vet_unflipping_vehicle_mass_limit = 100000;
