@@ -6,8 +6,8 @@
 // Infos
 onLoadName = "NAME DEINER MISSION";
 onLoadMission = "TacticalBacon | <t color='#32CD32'>''NAME DEINER MISSION''</t> - tacticalbacon.de - ts3.tacticalbacon.de - kontakt@tacticalbacon.de";
-loadScreen = "\TBMod_main\pics\logo.paa";
-overviewPicture = "\TBMod_main\pics\logo.paa";
+loadScreen = "\x\TBMod\addons\main\pics\logo.paa";
+overviewPicture = "\x\TBMod\addons\main\pics\logo.paa";
 author = "DEIN NAME [TacticalBacon]"; // das [TacticalBacon] MUSS immer hinter deinem Namen stehen für den Mod
 
 //skipLobby = 1;
@@ -19,7 +19,7 @@ respawnDialog = 0;
 //respawnButton = 0;
 enableTeamSwitch = 0;
 
-minPlayerDistance = 20;
+minPlayerDistance = 30;
 wreckManagerMode = 1;
 wreckLimit = 5;
 wreckRemovalMinTime = 1800; // wenn das Limit erreicht/überschritten
