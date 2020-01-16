@@ -2,7 +2,7 @@
 force force ace_common_allowFadeMusic = true;
 force force ace_common_checkPBOsAction = 0;
 force force ace_common_checkPBOsCheckAll = true;
-force force ace_common_checkPBOsWhitelist = "[""tbmod_server"",""TBModExt_monitoring""]";
+force force ace_common_checkPBOsWhitelist = "[""tbmod_server"",""TBModExt_monitoring"",""TBModExt_statstracker"",""TB_eric""]";
 force force ace_noradio_enabled = true;
 force force ace_parachute_hideAltimeter = true;
 
@@ -173,7 +173,7 @@ force force ace_repair_wheelRepairRequiredItems = 0;
 
 // ACE Magazine Repack
 force force ace_magazinerepack_timePerAmmo = 1.5;
-force force ace_magazinerepack_timePerBeltLink = 8;
+force force ace_magazinerepack_timePerBeltLink = 6;
 force force ace_magazinerepack_timePerMagazine = 2;
 
 // ACE Markierungssystem (Spraydose)
@@ -339,11 +339,11 @@ force force ace_nightvision_noiseScaling = 0.4;
 force force ace_nightvision_shutterEffects = false;
 
 // ACEX Headless
-force force acex_headless_delay = 10;
+force force acex_headless_delay = 15;
 force force acex_headless_enabled = true;
 force force acex_headless_endMission = 0;
 force force acex_headless_log = false;
-force force acex_headless_transferLoadout = 1;
+force force acex_headless_transferLoadout = 2;
 
 // ACEX Hinsetzen
 force force acex_sitting_enable = true;
@@ -358,9 +358,9 @@ force force acex_viewrestriction_preserveView = false;
 
 // ACEX Volume
 force force acex_volume_enabled = true;
-force force acex_volume_fadeDelay = 2;
+force force acex_volume_fadeDelay = 5;
 force force acex_volume_lowerInVehicles = true;
-force force acex_volume_reduction = 5;
+force force acex_volume_reduction = 7;
 acex_volume_remindIfLowered = true;
 acex_volume_showNotification = false;
 
@@ -368,7 +368,7 @@ acex_volume_showNotification = false;
 force force Achilles_var_iconSelection = "Achilles_var_iconSelection_Achilles";
 force force Achilles_var_moduleTreeCollapse = true;
 Achilles_var_moduleTreeDLC = false;
-force force Achilles_var_moduleTreeSearchPatch = true;
+force force Achilles_var_moduleTreeSearchPatch = false;
 
 // Achilles - Debug
 force force Achilles_Debug_Output_Enabled = false;
@@ -376,6 +376,11 @@ force force Achilles_Debug_Output_Enabled = false;
 // Achilles - Standardeinstellungen von Modulen
 force force Achilles_var_setRadioFrequenciesLR_Default = "70";
 force force Achilles_var_setRadioFrequenciesSR_Default = "50";
+
+// Achilles - Verfügbare Module
+force force Achilles_var_Achilles_DevTools_FunctionViewer = false;
+force force Achilles_var_Achilles_DevTools_ShowInAnimViewer = false;
+force force Achilles_var_Ares_Module_Dev_Tools_Execute_Code = false;
 
 // ADV - ACE CPR
 force force adv_aceCPR_addTime = 20;
@@ -388,9 +393,8 @@ force force adv_aceCPR_enable = true;
 force force adv_aceCPR_maxTime = 600;
 force force adv_aceCPR_useLocation_AED = 0;
 
-// DUI - Squad Radar - Indikatoren
-force force diwako_dui_indicators_range = 20;
-force force diwako_dui_indicators_show = false;
+// CBA Waffen
+force force cba_disposable_replaceDisposableLauncher = true;
 
 // DUI - Squad Radar - Radar
 diwako_dui_compass_style = ["\z\diwako_dui\addons\radar\UI\compass_styles\classic\limited.paa","\z\diwako_dui\addons\radar\UI\compass_styles\classic\full.paa"];
@@ -398,7 +402,7 @@ force force diwako_dui_compassRange = 30;
 force force diwako_dui_distanceWarning = 3;
 force force diwako_dui_enable_compass_dir = 2;
 force force diwako_dui_enable_occlusion = true;
-force force diwako_dui_show_squadbar = false;
+force force diwako_dui_radar_sortType = "fireteam";
 
 // GRAD slingHelmet
 force force GRAD_slingHelmet_additionalList = "";
@@ -408,19 +412,19 @@ force force GRAD_slingHelmet_allowAll = false;
 force force grad_trenches_functions_allowBigEnvelope = true;
 force force grad_trenches_functions_allowCamouflage = true;
 force force grad_trenches_functions_allowDigging = true;
-force force grad_trenches_functions_allowGigantEnvelope = true;
+force force grad_trenches_functions_allowGiantEnvelope = true;
 force force grad_trenches_functions_allowShortEnvelope = true;
 force force grad_trenches_functions_allowSmallEnvelope = true;
 force force grad_trenches_functions_allowVehicleEnvelope = true;
-force force grad_trenches_functions_bigEnvelopeDigTime = 40;
+force force grad_trenches_functions_bigEnvelopeDigTime = 90;
 force force grad_trenches_functions_buildFatigueFactor = 0;
 force force grad_trenches_functions_camouflageRequireEntrenchmentTool = true;
 force force grad_trenches_functions_enableAutomaticFilePath = false;
-force force grad_trenches_functions_gigantEnvelopeDigTime = 90;
-force force grad_trenches_functions_shortEnvelopeDigTime = 20;
-force force grad_trenches_functions_smallEnvelopeDigTime = 30;
+force force grad_trenches_functions_giantEnvelopeDigTime = 190;
+force force grad_trenches_functions_shortEnvelopeDigTime = 50;
+force force grad_trenches_functions_smallEnvelopeDigTime = 70;
 force force grad_trenches_functions_stopBuildingAtFatigueMax = false;
-force force grad_trenches_functions_vehicleEnvelopeDigTime = 120;
+force force grad_trenches_functions_vehicleEnvelopeDigTime = 250;
 
 // Laxemann Align
 force force L_Align_enabled = true;
@@ -433,27 +437,44 @@ force force L_Immerse_recoil = true;
 force force L_Immerse_twitch = true;
 
 // LAxemann's Suppress
-force force L_Suppress_buildup = 0.7;
+force force L_Suppress_buildup = 0.8;
 force force L_Suppress_enabled = true;
 force force L_Suppress_flyByEffects = true;
-force force L_Suppress_flyByIntensity = 0.7;
+force force L_Suppress_flyByIntensity = 0.8;
 force force L_Suppress_halting = false;
-force force L_Suppress_intensity = 0.7;
+force force L_Suppress_intensity = 0.8;
 force force L_Suppress_playerSwabEnabled = true;
-force force L_Suppress_recovery = 1.4;
+force force L_Suppress_recovery = 1.3;
+
+// NMAB Settings
+force force NMAB_setting_particlesEnabled = true;
+
+// Simplex Support Services
+force force SSS_setting_adminFullAccess = true;
+force force SSS_setting_adminLimitSide = false;
+force force SSS_setting_cleanupCrew = true;
+force force SSS_setting_deleteVehicleOnEntityRemoval = false;
+force force SSS_setting_GiveUAVTerminal = true;
+force force SSS_setting_removeSupportOnVehicleDeletion = true;
+force force SSS_setting_resetVehicleOnRTB = true;
+force force SSS_setting_restoreCrewOnRTB = true;
+force force SSS_setting_specialItems = "";
+force force SSS_setting_specialItemsLimitSide = true;
+force force SSS_setting_specialItemsLogic = true;
 
 // TBMod
-force force TB_crashHelfer = false;
-force force TB_debug_lvl = 0;
-force force TB_debug_remote = false;
-force force TB_doorBreach = true;
-force force TB_enableVanillaSlingload = true;
-force force TB_fpsMonitor_client = true;
-force force TB_fpsMonitor_zeus = true;
 force force TB_inkognitoSystem = false;
-force force TB_medical_coef_global = 1;
-force force TB_recoilCoef = 1.5;
-force force TB_recoilStart = 0.8;
+force force TBMod_advSlingload_enableVanillaSlingload = true;
+force force TBMod_advSlingload_maxWeight = 12000;
+force force TBMod_main_crashHelfer = true;
+force force TBMod_main_debug_lvl = 0;
+force force TBMod_main_debug_remote = false;
+force force TBMod_main_doorBreach = true;
+force force TBMod_main_fpsMonitor_client = true;
+force force TBMod_main_fpsMonitor_zeus = true;
+force force TBMod_main_recoilCoef = 1;
+force force TBMod_main_recoilStart = 0.5;
+force force TBMod_medical_coef_global = 0.8;
 
 // TFAR - Allgemeine Einstellungen
 force force TFAR_AICanHearPlayer = false;
@@ -499,6 +520,7 @@ force force TFAR_takingRadio = 2;
 force force TFAR_Teamspeak_Channel_Name = "Mission";
 force force TFAR_Teamspeak_Channel_Password = "willistgeil";
 force force tfar_terrain_interception_coefficient = 10;
+force force TFAR_voiceCone = true;
 
 // TFAR - Benutzereinstellungen
 TFAR_default_radioVolume = 6.03862;
@@ -550,18 +572,22 @@ force force VCM_ActivateAI = true;
 force force VCM_ADVANCEDMOVEMENT = true;
 force force VCM_AIDISTANCEVEHPATH = 150;
 force force VCM_AIMagLimit = 2;
-force force VCM_ARTYDELAY = 600;
-force force VCM_ARTYENABLE = true;
+force force VCM_AISNIPERS = true;
+force force VCM_AISUPPRESS = true;
+force force VCM_ARTYDELAY = 30;
+force force VCM_ARTYENABLE = false;
 force force VCM_ARTYSIDES = [WEST,EAST,GUER];
 force force VCM_CARGOCHNG = true;
 force force VCM_ClassSteal = true;
 force force VCM_ARTYSPREAD = 200;
 force force VCM_Debug = false;
 force force VCM_DISEMBARKRANGE = 100;
+force force Vcm_DrivingActivated = false;
 force force VCM_ForceSpeed = true;
 force force VCM_FRMCHANGE = true;
-force force VCM_HEARINGDISTANCE = 1000;
+force force VCM_HEARINGDISTANCE = 800;
 force force VCM_MINECHANCE = 80;
+force force Vcm_PlayerAISkills = true;
 force force VCM_RAGDOLL = false;
 force force VCM_RAGDOLLCHC = 50;
 force force VCM_SIDEENABLED = [WEST,EAST,GUER];
@@ -571,11 +597,12 @@ force force VCM_StealVeh = true;
 force force VCM_TURRETUNLOAD = false;
 force force VCM_USECBASETTINGS = true;
 force force VCM_WARNDELAY = 30;
-force force VCM_WARNDIST = 1300;
+force force VCM_WARNDIST = 1000;
 
 // VET_Unflipping
+force force vet_unflipping_require_serviceVehicle = false;
 force force vet_unflipping_require_toolkit = false;
-force force vet_unflipping_time = 15;
+force force vet_unflipping_time = 10;
 force force vet_unflipping_unit_man_limit = 7;
 force force vet_unflipping_unit_mass_limit = 4000;
 force force vet_unflipping_vehicle_mass_limit = 100000;

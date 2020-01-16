@@ -191,7 +191,7 @@ force force ace_respawn_savePreDeathGear = true;
 
 // ACE Sanitäter
 force force ace_medical_ai_enabledFor = 2;
-force force ace_medical_AIDamageThreshold = 0.8;
+force force ace_medical_AIDamageThreshold = 0.9;
 force force ace_medical_allowLitterCreation = false;
 force force ace_medical_allowUnconsciousAnimationOnTreatment = true;
 force force ace_medical_amountOfReviveLives = 3;
@@ -205,7 +205,7 @@ force force ace_medical_enableAdvancedWounds = true;
 force force ace_medical_enableFor = 1;
 force force ace_medical_enableOverdosing = true;
 force force ace_medical_enableRevive = 1;
-force force ace_medical_enableScreams = false;
+force force ace_medical_enableScreams = true;
 force force ace_medical_enableUnconsciousnessAI = 0;
 force force ace_medical_enableVehicleCrashes = false;
 force force ace_medical_healHitPointAfterAdvBandage = true;
@@ -227,7 +227,7 @@ force force ace_medical_moveUnitsFromGroupOnUnconscious = false;
 force force ace_medical_painCoefficient = 0.7;
 force force ace_medical_painEffectType = 1;
 force force ace_medical_painIsOnlySuppressed = false;
-force force ace_medical_playerDamageThreshold = 7;
+force force ace_medical_playerDamageThreshold = 5;
 force force ace_medical_preventInstaDeath = true;
 force force ace_medical_remoteControlledAI = true;
 force force ace_medical_useCondition_PAK = 1;
@@ -464,21 +464,21 @@ force force SSS_setting_specialItemsLogic = true;
 
 // TBMod
 force force TB_inkognitoSystem = false;
-force force TBMod_advSlingload_enableVanillaSlingload = true;
-force force TBMod_advSlingload_maxWeight = 12000;
+force force TBMod_advSlingload_enableVanillaSlingload = false;
+force force TBMod_advSlingload_maxWeight = 10500;
 force force TBMod_main_crashHelfer = true;
 force force TBMod_main_debug_lvl = 0;
 force force TBMod_main_debug_remote = false;
 force force TBMod_main_doorBreach = true;
 force force TBMod_main_fpsMonitor_client = true;
 force force TBMod_main_fpsMonitor_zeus = true;
-force force TBMod_main_recoilCoef = 1;
-force force TBMod_main_recoilStart = 0.5;
-force force TBMod_medical_coef_global = 0.8;
+force force TBMod_main_recoilCoef = 1.5;
+force force TBMod_main_recoilStart = 0.7;
+force force TBMod_medical_coef_global = 1;
 
 // TFAR - Allgemeine Einstellungen
-force force TFAR_AICanHearPlayer = false;
-force force TFAR_AICanHearSpeaker = false;
+force force TFAR_AICanHearPlayer = true;
+force force TFAR_AICanHearSpeaker = true;
 force force TFAR_defaultIntercomSlot = -1;
 force force TFAR_enableIntercom = true;
 force force TFAR_experimentalVehicleIsolation = true;
@@ -519,17 +519,18 @@ force force TFAR_spectatorCanHearFriendlies = true;
 force force TFAR_takingRadio = 2;
 force force TFAR_Teamspeak_Channel_Name = "Mission";
 force force TFAR_Teamspeak_Channel_Password = "willistgeil";
-force force tfar_terrain_interception_coefficient = 6;
+force force tfar_terrain_interception_coefficient = 5;
 force force TFAR_voiceCone = true;
 
 // TFAR - Benutzereinstellungen
+TFAR_default_radioVolume = 6.03862;
 TFAR_pluginTimeout = 6;
 
 // Unit Ambient SFX Options
-force force UAS_option_chanceCough = 0.1;
-force force UAS_option_chanceRadio = 0.5;
-force force UAS_option_chanceSigh = 0.1;
-force force UAS_option_chanceWhistle = 0.03;
+force force UAS_option_chanceCough = 0.2;
+force force UAS_option_chanceRadio = 0.7;
+force force UAS_option_chanceSigh = 0.2;
+force force UAS_option_chanceWhistle = 0.06;
 force force UAS_option_disableOnPlayers = true;
 force force UAS_option_disableRadioOnPlayers = true;
 force force UAS_option_enableCough = true;
@@ -576,14 +577,14 @@ force force VCM_AISUPPRESS = true;
 force force VCM_ARTYDELAY = 30;
 force force VCM_ARTYENABLE = false;
 force force VCM_ARTYSIDES = [WEST,EAST,GUER];
-force force VCM_CARGOCHNG = true;
+force force VCM_CARGOCHNG = false;
 force force VCM_ClassSteal = false;
 force force VCM_Debug = false;
-force force VCM_DISEMBARKRANGE = 100;
+force force VCM_DISEMBARKRANGE = 50;
 force force Vcm_DrivingActivated = false;
 force force VCM_ForceSpeed = true;
 force force VCM_FRMCHANGE = true;
-force force VCM_HEARINGDISTANCE = 300;
+force force VCM_HEARINGDISTANCE = 400;
 force force VCM_MINECHANCE = 0;
 force force Vcm_PlayerAISkills = true;
 force force VCM_RAGDOLL = false;
@@ -594,13 +595,13 @@ force force VCM_STATICARMT = 300;
 force force VCM_StealVeh = false;
 force force VCM_TURRETUNLOAD = false;
 force force VCM_USECBASETTINGS = true;
-force force VCM_WARNDELAY = 30;
+force force VCM_WARNDELAY = 120;
 force force VCM_WARNDIST = 400;
 
 // VET_Unflipping
 force force vet_unflipping_require_serviceVehicle = false;
 force force vet_unflipping_require_toolkit = false;
-force force vet_unflipping_time = 10;
-force force vet_unflipping_unit_man_limit = 7;
+force force vet_unflipping_time = 30;
+force force vet_unflipping_unit_man_limit = 6;
 force force vet_unflipping_unit_mass_limit = 4000;
 force force vet_unflipping_vehicle_mass_limit = 100000;

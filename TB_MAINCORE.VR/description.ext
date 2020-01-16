@@ -19,7 +19,7 @@ respawnDialog = 0;
 //respawnButton = 0;
 enableTeamSwitch = 0;
 
-minPlayerDistance = 30;
+minPlayerDistance = 50;
 wreckManagerMode = 1;
 wreckLimit = 5;
 wreckRemovalMinTime = 1800; // wenn das Limit erreicht/überschritten
