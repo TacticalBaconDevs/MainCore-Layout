@@ -56,11 +56,11 @@ class CfgRemoteExec
 	class Commands {mode=2; jip=1;};
 };
 
-class CfgDebriefingSections
+/*class CfgDebriefingSections
 {
 	class acex_killTracker
 	{
 		title = "Acex Killed Events";
 		variable = "acex_killTracker_outputText";
 	};
-};
+};*/
