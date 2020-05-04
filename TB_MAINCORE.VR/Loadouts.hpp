@@ -1,3 +1,6 @@
+/*
+    Einheiten für POPPY aus dem TBMod
+*/
 #define ADDCLASSLOADOUT(SIDE,NUM) class TBMod_poppy_##SIDE##_##NUM: All##SIDE {}
 
 class CfgLoadouts
@@ -23,7 +26,7 @@ class CfgLoadouts
         postLoadout = "(group (_this # 0)) enableGunLights 'ForceOn'"; // Ki Taschenlampe
     };
 
-//========================================== ALLBLUFOR ==========================================// 
+    //========================================== ALLBLUFOR ==========================================// 
     class Allblufor : All
     {
         uniform[] = {"rhs_uniform_cu_ocp","rhs_uniform_cu_ocp_101st","rhs_uniform_cu_ocp_10th","rhs_uniform_cu_ocp_1stcav","rhs_uniform_cu_ocp_82nd"};
@@ -49,9 +52,9 @@ class CfgLoadouts
         };
     };
     
-//===================================== Poppy BLUFOR Units ======================================//
+    //===================================== Poppy BLUFOR Units ======================================//
 
-// Leader
+    // Leader
     class TBMod_poppy_blufor_01 : Allblufor
     {
         backpack[] = {"OPXT_multicam_210", "OPXT_scorpion_117"};
@@ -61,7 +64,8 @@ class CfgLoadouts
         binoculars[] = {"Rangefinder"};
         magazines[] += {{"SmokeShellGreen", 2},{"SmokeShellRed", 2}};
     };
-// Grenadier
+    
+    // Grenadier
     class TBMod_poppy_blufor_02 : Allblufor
     {
         primary[] = {{"rhs_weap_m4_m320","rhsusf_acc_su230"},{"rhs_weap_m4a1_m320","rhsusf_acc_acog2_usmc"}};
@@ -69,7 +73,8 @@ class CfgLoadouts
         binoculars[] = {"Rangefinder"};
         magazines[] += {{"TB_rhs_mag_40mm_HEDP", 8},{"TB_rhs_mag_40mm_HE", 8}};
     };
-// MG-Schütze
+    
+    // MG-Schütze
     class TBMod_poppy_blufor_03 : Allblufor
     {
         vest[] = {"rhsusf_spcs_ocp_saw","rhsusf_spcs_ocp_machinegunner"};
@@ -79,7 +84,8 @@ class CfgLoadouts
             {"rhsusf_200Rnd_556x45_soft_pouch_ucp", 4},{"rhsusf_mag_17Rnd_9x19_JHP", 3},{"SmokeShell", 4},{"SmokeShellBlue", 1}
         };
     };
-//Launcher SU
+
+    //Launcher SU
     class TBMod_poppy_blufor_04 : Allblufor    
     {
         launcher[] = {{"rhs_weap_M136"}};
@@ -93,10 +99,10 @@ class CfgLoadouts
     ADDCLASSLOADOUT(blufor,10);
 
 
-//========================================== ALLOPFOR ==========================================// 
+    //========================================== ALLOPFOR ==========================================// 
     class Allopfor : All {}
 
-//===================================== Poppy OPFOR Units ======================================//
+    //===================================== Poppy OPFOR Units ======================================//
     ADDCLASSLOADOUT(opfor,01);
     ADDCLASSLOADOUT(opfor,02);
     ADDCLASSLOADOUT(opfor,03);
@@ -109,10 +115,10 @@ class CfgLoadouts
     ADDCLASSLOADOUT(opfor,10);
 
 
-//========================================== ALLIND ==========================================// 
+    //========================================== ALLIND ==========================================// 
     class Allind : All {}
 
-//===================================== Poppy IND Units ======================================//
+    //===================================== Poppy IND Units ======================================//
     ADDCLASSLOADOUT(ind,01);
     ADDCLASSLOADOUT(ind,02);
     ADDCLASSLOADOUT(ind,03);
