@@ -85,7 +85,7 @@ class CfgLoadouts
         };
     };
 
-    //Launcher SU
+    // Launcher SU
     class TBMod_poppy_blufor_04 : Allblufor    
     {
         launcher[] = {{"rhs_weap_M136"}};
