@@ -23,6 +23,7 @@ class CfgLoadouts
         watch[] = {};
         magazines[] = {};
         items[] = {};
+        face[] = {};
         postLoadout = "(group (_this # 0)) enableGunLights 'ForceOn'"; // Ki Taschenlampe
     };
 
