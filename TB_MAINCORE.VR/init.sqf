@@ -50,7 +50,7 @@ if (count TB_blacklistRollen_custom != 15) then
     /* Eigene Namen für die Rollen, einfach den Namen zwischen den "" ändern, beachte,
         einige Rollen haben festgeschriebene Fähigkeiten!    
     */
-    TB_customName = [
+    TB_customName_custom = [
         "Truppführer",              // lead
         "Grenadier",                // grena
         "Kampfsanitäter",           // sani -> feste Sanifähigkeiten
