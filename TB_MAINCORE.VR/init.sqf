@@ -1,4 +1,36 @@
 /*
+    ###################################################################################
+    Missionbauer Settings
+    ###################################################################################
+*/
+// Dies erlaub bestimmte Rollen zu sperren
+// verfügbar: lead, grena, sani, mg, spreng, aaat, trag, dmr, pilot, sniper, spotter, jtac, arzt, rifle, pionier
+TB_blacklistRollen = [];
+
+// Mit dieser Variable kannst du Rollen aus dem normalen Arsenal umbennen
+TB_customName = [
+    "Truppführer",              // lead
+    "Grenadier",                // grena
+    "Kampfsanitäter",           // sani -> feste Sanifähigkeiten
+    "Unterstützungsschütze",    // mg
+    "Sprengmeister",            // spreng -> feste Pionierfähigkeit
+    "Anti-Fahrzeug",            // aaat -> feste höhere Inventartragefähigkeit
+    "Munitionsträger",          // trag -> feste hohe Kistentragekraft, höhere Inventartragefähigkeit
+    "Gruppenaufklärer",         // dmr
+    "Pilot",                    // pilot -> feste Sanifähigkeiten, Pionierfähigkeit, hohe Kistentragekraft
+    "AufklärerSniper",          // sniper
+    "AufklärerSpotter",         // spotter
+    "DrohnenOP",                // jtac
+    "Arzt",                     // arzt -> feste Sanifähigkeiten
+    "Waffenspezialist",         // rifle
+    "Pionier"                   // pionier -> feste Pionierfähigkeit, hohe Kistentragekraft, höhere Inventartragefähigkeit
+];
+
+/*
+    ###################################################################################
+    CUSTOM ARSENALE
+    ###################################################################################
+
     In Arma:
     Im Hauptmenü auf "Tutorials" klicken, dann "ACE-ARSENAL" nun alles ausrüsten.
     Wenn du alles ausgerüstet hast, unten auf "EXPORTIEREN" klicken.
@@ -64,7 +96,7 @@ if (count TB_blacklistRollen_custom != 15) then
         "AufklärerSpotter",         // spotter
         "DrohnenOP",                // jtac
         "Arzt",                     // arzt -> feste Sanifähigkeiten
-        "Schütze",                  // rifle
+        "Waffenspezialist",         // rifle
         "Pionier"                   // pionier -> feste Pionierfähigkeit, hohe Kistentragekraft, höhere Inventartragefähigkeit
     ];
 };
