@@ -59,11 +59,16 @@ force force ace_ui_weaponName = false;
 force force ace_ui_weaponNameBackground = false;
 force force ace_ui_zeroing = true;
 
+// ACE Casings
+force force ace_casings_enabled = true;
+force force ace_casings_maxCasings = 250;
+
 // ACE Crew Served Weapons
 force force ace_csw_ammoHandling = 1;
 force force ace_csw_defaultAssemblyMode = false;
 force force ace_csw_dragAfterDeploy = true;
 force force ace_csw_handleExtraMagazines = true;
+force force ace_csw_handleExtraMagazinesType = 0;
 force force ace_csw_progressBarTimeCoefficent = 1;
 
 // ACE Durchzündung
@@ -135,12 +140,16 @@ force force acex_field_rations_timeWithoutWater = 5;
 force force acex_field_rations_waterSourceActions = 2;
 
 // ACE Feuer
+force force ace_fire_dropWeapon = 1;
 force force ace_fire_enabled = true;
 force force ace_fire_enableFlare = true;
+force force ace_fire_enableScreams = true;
 
 // ACE Fingerzeig
 force force ace_finger_enabled = true;
 force force ace_finger_maxRange = 10;
+force force ace_finger_proximityScaling = false;
+force force ace_finger_sizeCoef = 1;
 
 // ACE G-Kräfte
 force force ace_gforces_coef = 0.8;
@@ -276,6 +285,7 @@ force force ace_magazinerepack_timePerMagazine = 2;
 // ACE Schnellzugang
 force force ace_quickmount_distance = 5;
 force force ace_quickmount_enabled = true;
+force force ace_quickmount_enableMenu = 3;
 ace_quickmount_priority = 3;
 force force ace_quickmount_speed = 10;
 
@@ -304,10 +314,11 @@ ace_viewdistance_viewDistanceOnFoot = 1500;
 force force ace_frag_enabled = true;
 force force ace_frag_maxTrack = 10;
 force force ace_frag_maxTrackPerFrame = 10;
-force force ace_frag_reflectionsEnabled = false;
-force force ace_frag_spallEnabled = false;
+force force ace_frag_reflectionsEnabled = true;
+force force ace_frag_spallEnabled = true;
 
 // ACE Sprengstoffe
+force force ace_explosives_customTimerDefault = 30;
 force force ace_explosives_customTimerMax = 900;
 force force ace_explosives_customTimerMin = 5;
 force force ace_explosives_explodeOnDefuse = false;
@@ -319,6 +330,8 @@ force force ace_fastroping_requireRopeItems = false;
 force force ace_gunbag_swapGunbagEnabled = true;
 force force ace_hitreactions_minDamageToTrigger = 0.1;
 force force ace_laser_dispersionCount = 2;
+force force ace_laser_showLaserOnMap = 3;
+force force ace_marker_flags_placeAnywhere = true;
 force force ace_microdagr_mapDataAvailable = 2;
 force force ace_microdagr_waypointPrecision = 3;
 force force ace_noradio_enabled = true;
@@ -329,6 +342,9 @@ force force ace_parachute_hideAltimeter = true;
 force force ace_tagging_quickTag = 0;
 
 // ACE Verstärken
+force force ace_fortify_markObjectsOnMap = 1;
+force force ace_fortify_timeCostCoefficient = 1;
+force force ace_fortify_timeMin = 1.5;
 force force acex_fortify_settingHint = 1;
 
 // ACE Waffen
@@ -404,7 +420,7 @@ force force ace_arsenal_enableIdentityTabs = true;
 
 // ACE-Medicsystem
 force force ace_medical_ai_enabledFor = 2;
-force force ace_medical_AIDamageThreshold = 0.9;
+force force ace_medical_AIDamageThreshold = 0.8;
 force force ace_medical_bleedingCoefficient = 0.3;
 force force ace_medical_blood_bloodLifetime = 300;
 force force ace_medical_blood_enabledFor = 2;
@@ -426,11 +442,11 @@ force force ace_medical_limping = 1;
 force force ace_medical_painCoefficient = 0.7;
 force force ace_medical_painUnconsciousChance = 0.1;
 force force ace_medical_playerDamageThreshold = 10;
-force force ace_medical_spontaneousWakeUpChance = 1;
+force force ace_medical_spontaneousWakeUpChance = 0;
 force force ace_medical_spontaneousWakeUpEpinephrineBoost = 30;
 force force ace_medical_statemachine_AIUnconsciousness = false;
 force force ace_medical_statemachine_cardiacArrestBleedoutEnabled = false;
-force force ace_medical_statemachine_cardiacArrestTime = 240;
+force force ace_medical_statemachine_cardiacArrestTime = 600;
 force force ace_medical_statemachine_fatalInjuriesAI = 0;
 force force ace_medical_statemachine_fatalInjuriesPlayer = 2;
 force force ace_medical_treatment_advancedBandages = 2;
@@ -494,6 +510,7 @@ force force adv_aceCPR_useLocation_AED = 0;
 force force ClearBrush_requireEntrenchingTool = false;
 
 // Community Base Addons
+force force cba_diagnostic_watchInfoRefreshRate = 0.2;
 force force cba_disposable_dropUsedLauncher = 2;
 force force cba_disposable_replaceDisposableLauncher = true;
 force force cba_network_loadoutValidation = 2;
@@ -568,48 +585,52 @@ force force grad_trenches_functions_vehicleEnvelopeDigTime = 200;
 force force grad_trenches_functions_vehicleEnvelopeRemovalTime = -1;
 
 // KAT - ADV Medical: Airway
-force force kat_airway_Accuvac_time = 8;
+force force kat_airway_Accuvac_time = 5;
+force force kat_airway_CancelRecoveryPosition_Time = 2;
 force force kat_airway_CheckAirway_time = 2;
 force force kat_airway_checkbox_puking_sound = true;
 force force kat_airway_Colored_logs = true;
 force force kat_airway_enable = true;
-force force kat_airway_Guedeltubus_time = 6;
+force force kat_airway_Guedeltubus_time = 3;
 force force kat_airway_Larynxtubus_time = 3;
 force force kat_airway_medLvl_Accuvac = 1;
 force force kat_airway_medLvl_Guedeltubus = 0;
 force force kat_airway_medLvl_Larynxtubus = 1;
 force force kat_airway_Overstretch_time = 3;
-force force kat_airway_probability_headturning = 50;
-force force kat_airway_probability_obstruction = 15;
-force force kat_airway_probability_occluded = 10;
+force force kat_airway_probability_headturning = 75;
+force force kat_airway_probability_obstruction = 5;
+force force kat_airway_probability_occluded = 5;
+force kat_airway_RecoveryPosition_Time = 5;
 force force kat_airway_string_exit = "";
 force force kat_airway_TurnAround_time = 2;
 
 // KAT - ADV Medical: Breathing
 force force kat_breathing_enable = true;
 force force kat_breathing_enable_selfChestseal = 1;
-force force kat_breathing_hemopneumothoraxChance = 5;
+force force kat_breathing_hemopneumothoraxChance = 10;
 force force kat_breathing_medLvl_Chestseal = 1;
 force force kat_breathing_medLvl_hemopneumothoraxTreatment = 1;
 force force kat_breathing_medLvl_Pulseoximeter = 0;
-force force kat_breathing_pneumothorax = 5;
+force force kat_breathing_pneumothorax = 10;
 force force kat_breathing_pneumothorax_hardcore = false;
 force force kat_breathing_pneumothoraxDamageThreshold = 0.4;
+force force kat_breathing_severeValue = 60;
+force force kat_breathing_slightValue = 95;
 force force kat_breathing_SpO2_dieActive = true;
-force force kat_breathing_SpO2_dieValue = 65;
+force force kat_breathing_SpO2_dieValue = 50;
 force force kat_breathing_SpO2_MultiplyNegative = 1;
 force force kat_breathing_SpO2_MultiplyPositive = 1;
-force force kat_breathing_SpO2_perfusion = true;
-force force kat_breathing_SpO2_unconscious = 75;
-force force kat_breathing_Stable_spo2 = 85;
+force force kat_breathing_SpO2_perfusion = false;
+force force kat_breathing_SpO2_unconscious = 70;
+force force kat_breathing_Stable_spo2 = 90;
 force force kat_breathing_tensionhemothorax_hardcore = false;
 
 // KAT - ADV Medical: Circulation
 force force kat_circulation_AdvRhythm = true;
 force force kat_circulation_AED_BeepsAndCharge = true;
-force force kat_circulation_blood_draw_limit = 3.6;
-force force kat_circulation_blood_drawTime_250ml = 25;
-force force kat_circulation_blood_drawTime_500ml = 50;
+force force kat_circulation_blood_draw_limit = 5;
+force force kat_circulation_blood_drawTime_250ml = 15;
+force force kat_circulation_blood_drawTime_500ml = 30;
 force force kat_circulation_bloodGroups = true;
 force force kat_circulation_CPR_Chance_Default = 20;
 force force kat_circulation_CPR_Chance_Doctor = 40;
@@ -621,8 +642,8 @@ force force kat_circulation_enable_CPR_Chances = true;
 force force kat_circulation_enable_selfBloodDraw = 1;
 force force kat_circulation_medLvl_AED = 0;
 force force kat_circulation_medLvl_AED_X = 0;
-force force kat_circulation_SuccesCh_AED = 80;
-force force kat_circulation_SuccesCh_AED_X = 85;
+force force kat_circulation_SuccesCh_AED = 85;
+force force kat_circulation_SuccesCh_AED_X = 90;
 force force kat_circulation_timeLimit_AEDX = 1800;
 force force kat_circulation_useLocation_AED = 0;
 
@@ -631,15 +652,15 @@ force force kat_misc_enable = true;
 
 // KAT - ADV Medical: Pharmacy
 force force kat_pharma_carbonateActive = true;
-force force kat_pharma_IOestablish = 7;
+force force kat_pharma_IOestablish = 4;
 force force kat_pharma_IVdrop = 600;
 force force kat_pharma_IVdropEnable = true;
-force force kat_pharma_IVestablish = 7;
+force force kat_pharma_IVestablish = 2;
 force force kat_pharma_IVmedic = 0;
 force force kat_pharma_IVreuse = false;
 force force kat_pharma_medLvl_Reorientation = 0;
 force force kat_pharma_naloxoneActive = true;
-force force kat_pharma_PushTime = 7;
+force force kat_pharma_PushTime = 5;
 force force kat_pharma_Reorientation_Enable = true;
 force force kat_pharma_Reorientation_Slap = true;
 force force kat_pharma_RequireInsIV = true;
@@ -746,7 +767,7 @@ force force TBMod_main_fpsMonitor_enabled = true;
 force force TBMod_main_fpsMonitor_zeus = true;
 force force TBMod_main_recoilCoef = 0.6;
 force force TBMod_main_recoilStart = 0.3;
-force force TBMod_main_recoilSystem = true;
+force force TBMod_main_recoilSystem = false;
 force force TBMod_medical_arztBoost = 0.3;
 force force TBMod_medical_coef_global = 1;
 force force TBMod_medical_facilityBoost = 0.3;
@@ -818,7 +839,7 @@ TFAR_volumeModifier_forceSpeech = true;
 
 // Unit Ambient SFX
 force force uvo_uas_chanceCough = 0.2;
-force force uvo_uas_chanceRadio = 0.7;
+force force uvo_uas_chanceRadio = 0.5;
 force force uvo_uas_chanceSigh = 0.2;
 force force uvo_uas_chanceWhistle = 0.06;
 force force uvo_uas_distanceCough = 250;

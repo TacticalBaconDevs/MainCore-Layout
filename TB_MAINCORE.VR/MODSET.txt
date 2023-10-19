@@ -1,13 +1,12 @@
 /*
     Beinhaltet die Mods dieser Mission im @Mod-Format.
-    Für eine schnellere Übersicht und fürs später nochmal spielen!
-    Werte in Klammern bedeuten, das sie nicht zum Bauen verwendet wurden,
-    also nur vom Zeus und/oder nur ClientMods sind.
+    Für eine schnellere Übersicht und für den TBUploader!
+    DLCs wie folgt angeben: Contact, GM (Global Mobilization), vn (S.O.G Prairie Fire), CSLA (Iron Curtain), WS (Western Sahara)
 */
 // Unsere MUST-HAVE-Mods
 @ace
 @CBA_A3
-@task_force_radio
+@TFAR
 @TBMod
 
 // zusätzlich benötigte Mods
