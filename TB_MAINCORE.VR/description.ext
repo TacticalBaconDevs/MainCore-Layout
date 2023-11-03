@@ -60,11 +60,11 @@ class CfgRemoteExec
     #include "Loadouts.hpp"
 #endif
 
-//class CfgDebriefingSections
-//{
-//	class acex_killTracker
-//	{
-//		title = "Acex Killed Events";
-//		variable = "acex_killTracker_outputText";
-//	};
-//};
+/*class CfgDebriefingSections
+{
+	class acex_killTracker
+	{
+		title = "Acex Killed Events";
+		variable = "acex_killTracker_outputText";
+	};
+};*/

@@ -59,10 +59,6 @@ force force ace_ui_weaponName = false;
 force force ace_ui_weaponNameBackground = false;
 force force ace_ui_zeroing = true;
 
-// ACE Casings
-force force ace_casings_enabled = true;
-force force ace_casings_maxCasings = 250;
-
 // ACE Crew Served Weapons
 force force ace_csw_ammoHandling = 1;
 force force ace_csw_defaultAssemblyMode = false;
@@ -262,6 +258,18 @@ force force ace_rearm_level = 1;
 force force ace_rearm_supply = 1;
 force force ace_refuel_hoseLength = 30;
 force force ace_refuel_rate = 3;
+
+// ACE Magazine umpacken
+force force ace_magazinerepack_repackLoadedMagazines = false;
+force force ace_magazinerepack_timePerAmmo = 1;
+force force ace_magazinerepack_timePerBeltLink = 4;
+force force ace_magazinerepack_timePerMagazine = 1.5;
+
+// ACE Patronenhülsen
+force force ace_casings_enabled = true;
+force force ace_casings_maxCasings = 250;
+
+// ACE Reparieren
 force force ace_repair_addSpareParts = false;
 force force ace_repair_autoShutOffEngineWhenStartingRepair = true;
 force force ace_repair_consumeItem_toolKit = 0;
@@ -275,12 +283,6 @@ force force ace_repair_miscRepairRequiredItems = ["ToolKit"];
 force force ace_repair_repairDamageThreshold = 0.6;
 force force ace_repair_repairDamageThreshold_engineer = 0.2;
 force force ace_repair_wheelRepairRequiredItems = [];
-
-// ACE Magazine umpacken
-force force ace_magazinerepack_repackLoadedMagazines = false;
-force force ace_magazinerepack_timePerAmmo = 1.5;
-force force ace_magazinerepack_timePerBeltLink = 6;
-force force ace_magazinerepack_timePerMagazine = 2;
 
 // ACE Schnellzugang
 force force ace_quickmount_distance = 5;
@@ -420,7 +422,7 @@ force force ace_arsenal_enableIdentityTabs = true;
 
 // ACE-Medicsystem
 force force ace_medical_ai_enabledFor = 2;
-force force ace_medical_AIDamageThreshold = 0.8;
+force force ace_medical_AIDamageThreshold = 1.2;
 force force ace_medical_bleedingCoefficient = 0.3;
 force force ace_medical_blood_bloodLifetime = 300;
 force force ace_medical_blood_enabledFor = 2;
@@ -441,8 +443,8 @@ force force ace_medical_ivFlowRate = 1.3;
 force force ace_medical_limping = 1;
 force force ace_medical_painCoefficient = 0.7;
 force force ace_medical_painUnconsciousChance = 0.1;
-force force ace_medical_playerDamageThreshold = 10;
-force force ace_medical_spontaneousWakeUpChance = 0;
+force force ace_medical_playerDamageThreshold = 8;
+force force ace_medical_spontaneousWakeUpChance = 1;
 force force ace_medical_spontaneousWakeUpEpinephrineBoost = 30;
 force force ace_medical_statemachine_AIUnconsciousness = false;
 force force ace_medical_statemachine_cardiacArrestBleedoutEnabled = false;
@@ -476,7 +478,7 @@ force force ace_medical_treatment_medicEpinephrine = 0;
 force force ace_medical_treatment_medicIV = 0;
 force force ace_medical_treatment_medicPAK = 2;
 force force ace_medical_treatment_medicSurgicalKit = 1;
-force force ace_medical_treatment_timeCoefficientPAK = 1;
+force force ace_medical_treatment_timeCoefficientPAK = 2;
 force force ace_medical_treatment_treatmentTimeAutoinjector = 5;
 force force ace_medical_treatment_treatmentTimeBodyBag = 15;
 force force ace_medical_treatment_treatmentTimeCPR = 15;
@@ -516,6 +518,10 @@ force force cba_disposable_replaceDisposableLauncher = true;
 force force cba_network_loadoutValidation = 2;
 cba_optics_usePipOptics = false;
 
+// DUI - Squad Radar - Indikatoren
+force force diwako_dui_indicators_range = 20;
+force force diwako_dui_indicators_show = false;
+
 // DUI - Squad Radar - Main
 force force diwako_dui_colors = "ace";
 force force diwako_dui_main_squadBlue = [0,0,1,1];
@@ -542,6 +548,44 @@ diwako_dui_namelist_size = 1.15;
 diwako_dui_radar_leadingZeroes = true;
 diwako_dui_radar_namelist_vertical_spacing = 0.8;
 force force diwako_dui_radar_sortType = "fireteam";
+
+// Enhanced Movement Rework
+force force emr_main_allowMidairClimbing = true;
+force force emr_main_animSpeedCoef = 1;
+force force emr_main_animSpeedStaminaCoef = 0.4;
+force force emr_main_assistDuty = 1.5;
+force force emr_main_assistHeight = 1;
+force force emr_main_blacklistStr = "";
+force force emr_main_climbingEnabled = true;
+force force emr_main_climbOnDuty = 3.4;
+force force emr_main_climbOverDuty = 3;
+force force emr_main_dropDuty = 0.7;
+force force emr_main_dropViewElevation = -0.7;
+force force emr_main_enableWalkableSurface = true;
+force force emr_main_enableWeightCheck = false;
+force force emr_main_hintType = 2;
+force force emr_main_jumpDuty = 1;
+force force emr_main_jumpForwardVelocity = 1.2;
+force force emr_main_jumpingEnabled = true;
+force force emr_main_jumpingLoadCoefficient = 1;
+force force emr_main_jumpVelocity = 3.5;
+force force emr_main_maxClimbHeight = 2.6;
+force force emr_main_maxDropHeight = 6;
+force force emr_main_maxWeightClimb1 = 100;
+force force emr_main_maxWeightClimb2 = 85;
+force force emr_main_maxWeightClimb3 = 60;
+force force emr_main_maxWeightJump = 100;
+force force emr_main_preventHighVaulting = false;
+force force emr_main_staminaCoefficient = 1;
+force force emr_main_whitelistStr = "";
+force force emr_main_yeetCoefficient = 1.4;
+
+// GRAD CaptiveWalkingAnimation
+force force grad_captiveWalking_functions_allowFreeing = true;
+force force grad_captiveWalking_functions_allowRunning = false;
+force force grad_captiveWalking_functions_allowWalkingWhileCaptiv = true;
+force force grad_captiveWalking_functions_disableEscorting = false;
+force force grad_captiveWalking_functions_freeingTime = 35;
 
 // GRAD slingHelmet
 force force GRAD_slingHelmet_additionalList = "";
@@ -765,9 +809,9 @@ force force TBMod_main_doorBreach = true;
 force force TBMod_main_fpsMonitor_client = true;
 force force TBMod_main_fpsMonitor_enabled = true;
 force force TBMod_main_fpsMonitor_zeus = true;
-force force TBMod_main_recoilCoef = 0.6;
+force force TBMod_main_recoilCoef = 0.5;
 force force TBMod_main_recoilStart = 0.3;
-force force TBMod_main_recoilSystem = false;
+force force TBMod_main_recoilSystem = true;
 force force TBMod_medical_arztBoost = 0.3;
 force force TBMod_medical_coef_global = 1;
 force force TBMod_medical_facilityBoost = 0.3;
@@ -913,4 +957,4 @@ force force zen_editor_randomizeCopyPaste = false;
 force force zen_editor_removeWatermark = true;
 force force zen_editor_unitRadioMessages = 2;
 force force zen_placement_enabled = true;
-force force zen_visibility_enabled = true;
+force force zen_visibility_enabled = 0;

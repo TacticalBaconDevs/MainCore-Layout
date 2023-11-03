@@ -8,5 +8,13 @@
 @CBA_A3
 @TFAR
 @TBMod
+@Zeus Enhanced
+@diwako_dui
+@LAMBS_Danger
+
+// Clientside, können mit // deaktiviert werden
+@JSRS
+@JSRS_RHS
+@BlastcoreMurrEdition
 
 // zusätzlich benötigte Mods
